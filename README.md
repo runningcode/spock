@@ -40,8 +40,8 @@ repositories {
 }
 
 dependencies {
-        compile 'org.spockframework.spock:spock-core:spock-1.3'
-        compile 'org.spockframework.spock:spock-spring:spock-1.3'
+        implementation 'org.spockframework.spock:spock-core:spock-1.3'
+        implementation 'org.spockframework.spock:spock-spring:spock-1.3'
 }
 ```
 3. For intermediate releases you can also use the commit-hash as version, e.g. compile `com.github.spockframework.spock:spock-core:d91bf785a1`
@@ -69,10 +69,10 @@ The tests are testing spock with a specific versions (variants) of groovy. Defau
 The groovy 2.4 and 2.5 variant should pass on all supported JDK versions:
 
 ```
-./gradlew clean build
+./gradlew build
 ```
 
-(Windows: `gradlew clean build`).
+(Windows: `gradlew build`).
 All build dependencies, including
 the [build tool](https://www.gradle.org) itself, will be downloaded
 automatically (unless already present).
